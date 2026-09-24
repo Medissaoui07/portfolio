@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mohamed Issaoui | AI & Robotics Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="hero">
+    <nav class="topbar">
+      <a class="brand" href="#top">Mohamed Issaoui</a>
+      <div class="navlinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#publications">Publications</a>
+     
+      </div>
+    </nav>
+
+    <section class="hero-grid" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow">AI Researcher · Robotics Engineer</p>
+        <h1>Building intelligent systems for autonomous robots.</h1>
+        <div class="contact-grid">
+        <a href="mailto:mohamed.issaoui@ensi-uma.tn">mohamed.issaoui@ensi-uma.tn</a>
+        <a href="https://www.linkedin.com/in/mohamed-issaoui-/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/Medissaoui07" target="_blank" rel="noreferrer">GitHub</a>
+        <span>Sousse, Tunisia</span>
+      </div>
+
+        
+
+        <div class="hero-actions">
+          <a class="button secondary" href="cv/MohamedIssaoui_Resume.pdf" target="_blank" rel="noreferrer">Download CV</a>
+        </div>
+      </div>
+
+      <aside class="hero-portrait-card" aria-label="Portrait">
+        <img class="hero-portrait" src="1764715443307.png" alt="Mohamed Issaoui portrait">
+      </aside>
+    </section>
+
+  </header>
+
+  <main>
+    <section class="section" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">About</p>
+        <h2>Profile</h2>
+      </div>
+      <div >
+        <p>
+          Fresh Computer Science Engineering graduate with a strong interest in deep learning,
+          reinforcement learning, embodied AI, and vision-language navigation for autonomous robots.
+          I am interested in research and engineering positions where I can contribute to robotics,
+          AI systems, and autonomous decision-making.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="section-heading">
+        <p class="eyebrow">Education</p>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item">
+          <p class="timeline-meta">2023 – 2026</p>
+          <h3>National School of Computer Science (ENSI), Tunisia</h3>
+            <p>Engineering degree.</p>
+        </article>
+        <article class="timeline-item">
+          <p class="timeline-meta">2021 – 2023</p>
+          <h3>Engineering Preparatory Institute of Monastir</h3>
+          <p>National competitive exam rank: 56/650.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-heading">
+        <p class="eyebrow">Experience</p>
+        <h2>Selected engineering and research experience.</h2>
+      </div>
+      <div class="cards">
+        <article class="card featured">
+          <p class="card-kicker">Research Intern · SPIN Lab, Wilfrid Laurier University, Canada</p>
+          <h3>Embodied AI and Vision-Language Navigation</h3>
+          <p class="card-date">Apr 2026 – Jul 2026</p>
+          <ul>
+            <li>Designed a modular Vision-Language Navigation prototype with a path toward ROS2 deployment.</li>
+            <li>Built predictive world-model components to maintain probabilistic beliefs over unseen spaces.</li>
+            <li>Integrated VLM perception, scene-graph memory, and an LLM planner for subgoal generation.</li>
+            <li>Explored generative anticipation for future observation hypotheses under uncertainty.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card-kicker">AI / Robotics Engineer Intern · OORB, Tunisia</p>
+          <h3>RL environments and control for legged robots</h3>
+          <p class="card-date">Jun 2025 – Aug 2025</p>
+          <ul>
+            <li>Designed quadruped locomotion and manipulation RL environments in MuJoCo and Gymnasium.</li>
+            <li>Trained PPO policies and integrated them into ROS2 nodes for real-time control.</li>
+            <li>Built reproducible pipelines with Docker, Kubeflow, and TensorBoard on Linux.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">Projects</p>
+        <h2></h2>
+      </div>
+      <div class="cards">
+        <article class="card">
+          <p class="card-kicker">Eurobot Competition · 2024</p>
+          <h3>Autonomous Mobile Robot</h3>
+          <ul>
+            <li>Implemented YOLO-based perception and LiDAR-based SLAM for environment understanding.</li>
+            <li>Designed PID control pipelines using encoder feedback for reliable navigation.</li>
+            <li>Deployed the robotic stack on Raspberry Pi and Jetson Nano with ROS2.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <p class="card-kicker">ENSI & OORB · 2025</p>
+          <h3>LLM-Guided Robot Learning</h3>
+          <p class="card-link"><a href="https://github.com/PCDorg/RewGen4Robotics" target="_blank" rel="noreferrer">GitHub repository</a></p>
+          <ul>
+            <li>Developed an LLM-guided reinforcement learning framework inspired by reward synthesis workflows.</li>
+            <li>Used language models to refine reward functions from environment feedback.</li>
+            <li>Evaluated reward efficiency and behavior quality on sparse-reward MuJoCo tasks.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="publications">
+      <div class="section-heading">
+        <p class="eyebrow">Publications</p>
+      </div>
+      <div class="publication-list">
+        <article class="publication">
+          <p class="publication-status">In preparation</p>
+          <h3>Vision-Language Navigation for Embodied AI</h3>
+          <p>
+            Co-authored research manuscript covering predictive world models, grounded memory,
+            and planning for autonomous navigation.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-heading">
+        <p class="eyebrow">Skills</p>
+      </div>
+      <div class="skill-grid">
+        <span>PyTorch</span>
+        <span>Transformers</span>
+        <span>Vision-Language Models</span>
+        <span>Reinforcement Learning</span>
+        <span>ROS2</span>
+        <span>MuJoCo</span>
+        <span>Gazebo</span>
+        <span>SLAM</span>
+        <span>Docker</span>
+        <span>Linux</span>
+        <span>Python</span>
+        <span>C++</span>
+      </div>
+    </section>
+
+    
+  </main>
+
+  
+</body>
+</html>

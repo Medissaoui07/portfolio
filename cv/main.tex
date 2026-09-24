@@ -1,0 +1,132 @@
+\documentclass[10pt, letterpaper]{article}
+
+% ------------------------------------------------------
+% Packages
+% ------------------------------------------------------
+\usepackage[margin=1.2cm]{geometry}
+\usepackage{titlesec}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{fontawesome5}
+\usepackage{tabularx}
+
+\hypersetup{
+    colorlinks=true,
+    urlcolor=MidnightBlue
+}
+
+\titleformat{\section}{\large\bfseries}{}{0pt}{}[\vspace{2pt}\titlerule]
+\titlespacing{\section}{0pt}{0.35cm}{0.15cm}
+
+\renewcommand\labelitemi{$\bullet$}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% ------------------------------------------------------
+% Header
+% ------------------------------------------------------
+\begin{center}
+    {\fontsize{22pt}{22pt}\bfseries Mohamed Issaoui}
+
+    \vspace{0.1cm}
+
+    {\small
+    \faMapMarker* Sousse, Tunisia \quad
+    \faPhone* +216 20 737 821 \quad
+    \href{mailto:mohamed.issaoui@ensi-uma.tn}{\faEnvelope[regular] \ mohamed.issaoui@ensi-uma.tn} \quad
+    \href{https://www.linkedin.com/in/mohamed-issaoui-/}{\faLinkedinIn \ mohamed-issaoui} \quad
+    \href{https://github.com/Medissaoui07}{\faGithub \ Medissaoui07}
+    }
+\end{center}
+
+\vspace{-0.3cm}
+
+% ------------------------------------------------------
+\section{Profile}
+Final-year \textbf{Computer Science Engineering Student (AI Track)} at ENSI (national competitive exam rank 56/650), graduating in \textbf{September 2026}.  
+Interested in \textbf{deep learning, reinforcement learning, embodied AI, and vision-language navigation for autonomous robots}.  
+
+
+% ------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{Engineering Preparatory Institute of Monastir} – National Competitive Exam Rank: 56/650 & \textit{2021–2023} \\
+\textbf{National School of Computer Science (ENSI), Tunisia} – Engineering Degree (AI Track) & \textit{2023–2026} \\
+\end{tabularx}
+
+% ------------------------------------------------------
+\section{Experience}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{AI/Robotics Engineer Intern – OORB, Tunisia} & \textit{Jun 2025 – Aug 2025} \\
+\end{tabularx}
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=1pt]
+    \item Designed \textbf{quadruped locomotion and manipulation RL environments} with explicit state and reward representations in MuJoCo/Gymnasium.
+    \item Trained and deployed \textbf{PPO-based policies} integrated into ROS2 nodes for real-time control.
+    \item Built reproducible and scalable experimentation pipelines using \textbf{Docker, Kubeflow, and TensorBoard} on \textbf{Linux and ROS2}.
+\end{itemize}
+
+\vspace{0.15cm}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{Research Intern (Embodied AI / VLN) – SPIN Lab, Wilfrid Laurier University, Canada} & \textit{Apr 2026 – Jul 2026} \\
+\end{tabularx}
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=1pt]
+    \item Designed a \textbf{modular Vision-Language Navigation (VLN)} research prototype targeting later deployment on a real \textbf{ROS2} robot.
+    \item Built a \textbf{predictive world model} maintaining probabilistic beliefs over unseen spaces, combining \textbf{semantic priors, hypothesis generation, and belief updating} to guide navigation.
+    \item Integrated \textbf{VLM-based perception} producing a grounded \textbf{scene-graph memory}, used by an \textbf{LLM planner} for subgoal generation and a stateful navigation policy with frontier scoring.
+    \item Experimented with a \textbf{generative anticipation module} to imagine likely future observations under high uncertainty, feeding hypotheses back into the belief state. \textit{Co-authoring a research paper on vision-language navigation (in preparation).}
+\end{itemize}
+
+% ------------------------------------------------------
+\section{Projects}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{Autonomous Mobile Robot – Eurobot Competition} & \textit{2024} \\
+\end{tabularx}
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=1pt]
+    \item Implemented \textbf{YOLO-based perception} and LiDAR-based SLAM for environment understanding.
+    \item Designed \textbf{PID control pipelines} using encoder feedback for reliable navigation.
+    \item Deployed complete robotic stacks on \textbf{Raspberry Pi and Jetson Nano} using ROS2.
+\end{itemize}
+
+\vspace{0.1cm}
+
+\begin{tabularx}{\textwidth}{@{}Xr@{}}
+\textbf{LLM-Guided Robot Learning – ENSI \& OORB} & \textit{2025} \\
+\href{https://github.com/PCDorg/RewGen4Robotics}{\faGithub\ GitHub Repo} &
+\end{tabularx}
+
+\begin{itemize}[leftmargin=0.5cm, itemsep=1pt]
+    \item Developed an \textbf{LLM-guided reinforcement learning framework} inspired by NVIDIA Eureka.
+    \item Used language models to \textbf{iteratively reason over environment feedback} and refine reward functions.
+    \item Evaluated reward efficiency and behavior quality on MuJoCo robotic tasks with sparse rewards.
+\end{itemize}
+
+% ------------------------------------------------------
+\section{Technical Skills}
+\textbf{Representation \& Reasoning:} Reward modeling, environment abstraction, decision pipelines, world models, scene graphs, belief-state estimation \\
+\textbf{Robot Learning:} Reinforcement Learning, imitation learning, LLM-guided reward design \\
+\textbf{Deep Learning:} PyTorch, CNNs, Transformers, Vision-Language Models, LLM planners, vision-language navigation \\
+\textbf{Robotics:} ROS2, Gazebo, MuJoCo, SLAM, Control Systems, OpenCV, embodied simulation \\
+\textbf{Software:} Linux (Ubuntu), Docker, TensorBoard, Kubeflow, Git \\
+\textbf{Languages:} Python, C++, C
+
+% ------------------------------------------------------
+\section{Languages}
+Arabic (Native) \quad French (Fluent) \quad English (Fluent)
+
+% ------------------------------------------------------
+\section{Certifications}
+Machine Learning Specialization – Coursera \\
+NVIDIA Jetson Nano AI Development
+
+\end{document}
